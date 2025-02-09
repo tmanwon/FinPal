@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5779287f-e5d4-43b1-93d8-32b24fcc4ed6" name="Changes" comment="More accurate tracking" />
+    <list default="true" id="5779287f-e5d4-43b1-93d8-32b24fcc4ed6" name="Changes" comment=".gitignore changes" />
     <list id="9ae7edc2-08ee-4786-ae11-c42f0a92ed43" name="Changes by mattmocklin" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -108,7 +108,15 @@
       <option name="project" value="LOCAL" />
       <updated>1739072216190</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary=".gitignore changes">
+      <option name="closed" value="true" />
+      <created>1739074438848</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1739074438848</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -165,7 +173,8 @@
     </ignored-roots>
     <MESSAGE value="Tabs and UI Improvements" />
     <MESSAGE value="More accurate tracking" />
-    <option name="LAST_COMMIT_MESSAGE" value="More accurate tracking" />
+    <MESSAGE value=".gitignore changes" />
+    <option name="LAST_COMMIT_MESSAGE" value=".gitignore changes" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
