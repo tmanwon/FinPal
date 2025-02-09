@@ -2,6 +2,7 @@ import { fetchOpenAIResponse } from "@/app/openai";
 import React, { useState } from "react";
 import { View, TextInput, Button, Text } from "react-native";
 import { StyleSheet } from 'react-native';
+import {submit} from "react-native-plaid-link-sdk";
 
 export default function Chat() {
 
@@ -39,7 +40,7 @@ export default function Chat() {
               value={input}
               onChangeText={(newInput) => setInput(newInput)}
             />
-            <Button onPress={handleInputSubmit}/>   
+            <Button title={"submit"} onPress={handleInputSubmit}/>
             <Text>{response}</Text>
         </View>
     );
