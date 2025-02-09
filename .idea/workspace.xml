@@ -4,17 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5779287f-e5d4-43b1-93d8-32b24fcc4ed6" name="Changes" comment="More accurate tracking">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FinPal/components/Balance.js" beforeDir="false" afterPath="$PROJECT_DIR$/FinPal/components/Balance.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FinPal/components/Card.js" beforeDir="false" afterPath="$PROJECT_DIR$/FinPal/components/Card.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FinPal/components/TestButton.js" beforeDir="false" afterPath="$PROJECT_DIR$/FinPal/components/TestButton.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FinPal/components/TransactionItem.js" beforeDir="false" afterPath="$PROJECT_DIR$/FinPal/components/TransactionItem.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FinPal/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/FinPal/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FinPal/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/FinPal/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FinPal/screens/Chat.js" beforeDir="false" afterPath="$PROJECT_DIR$/FinPal/screens/Chat.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FinPal/screens/Home.js" beforeDir="false" afterPath="$PROJECT_DIR$/FinPal/screens/Home.js" afterDir="false" />
-    </list>
+    <list default="true" id="5779287f-e5d4-43b1-93d8-32b24fcc4ed6" name="Changes" comment="More accurate tracking" />
     <list id="9ae7edc2-08ee-4786-ae11-c42f0a92ed43" name="Changes by mattmocklin" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -110,7 +100,15 @@
       <option name="project" value="LOCAL" />
       <updated>1739067520337</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="More accurate tracking">
+      <option name="closed" value="true" />
+      <created>1739072216190</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1739072216190</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
