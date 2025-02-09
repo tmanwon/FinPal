@@ -1,4 +1,3 @@
-/*
 import {
   StyleSheet,
   Text,
@@ -126,8 +125,3 @@ const styles = StyleSheet.create({
     marginTop: 12,
   },
 });
-
-
-
-
- */

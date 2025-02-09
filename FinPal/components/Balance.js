@@ -35,15 +35,15 @@ export default function Balance(props) {
           }, 0).toFixed(2)}
           </Text>
           <Text style={styles.title}>Remaining budget</Text>
-          <Text style={styles.balance}>${props.budget - props.data.reduce((acc, transaction) => {
+          <Text style={styles.balance}>${(props.budget - (props.data.reduce((acc, transaction) => {
             return acc + parseFloat(transaction.amount);
-          }, 0).toFixed(2)}</Text>
+          }, 0)).toFixed(2)).toFixed(2)}</Text>
         </View>
         <ProgressChart
           data={{
-            data: [(props.data.reduce((acc, transaction) => {
+            data: [((props.data.reduce((acc, transaction) => {
               return acc + parseFloat(transaction.amount);
-            }, 0).toFixed(2))/props.budget],
+            }, 0))/props.budget)],
           }}
           width={Dimensions.get('window').width / 2 - 24}
           height={100}

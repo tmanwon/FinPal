@@ -54,6 +54,7 @@ const styles = StyleSheet.create({
   amount: {
     fontSize: 15,
     fontWeight: '600',
+    color: '#ff0000',
     alignSelf: 'start',
   },
   icon: {
