@@ -1,4 +1,4 @@
-# 💳 FinPay: Mobile Credit Card Expense Reminder with AI Insights (for UGAHacks X)
+# 💳 FinPal: Mobile Credit Card Expense Reminder with AI Insights (for UGAHacks X)
 
 ## 👨‍💻 Team Members
 Tillman Won
@@ -6,14 +6,14 @@ Tillman Won
 Matthew Mocklin
 
 ## 📌 Project Purpose
-Many individuals struggle with credit card debt due to overspending. According to a 2023 study by the Federal Reserve, **over 60% of Americans** carry credit card debt, often because they spend beyond their actual available balance. **FinPay** is designed to address this issue by keeping users accountable and promoting better financial decisions.
+Many individuals struggle with credit card debt due to overspending. According to a 2023 study by the Federal Reserve, **over 60% of Americans** carry credit card debt, often because they spend beyond their actual available balance. **FinPal** is designed to address this issue by keeping users accountable and promoting better financial decisions.
 
 **How it works:**
 - Tracks credit card transactions in real-time
 - Notifies users after every purchase with their remaining monthly budget
 - Includes an AI assistant for personalized financial insights
 
-By ensuring users always know how much they have left in their budget, **FinPay** helps prevent overspending and encourages responsible credit usage.
+By ensuring users always know how much they have left in their budget, **FinPal** helps prevent overspending and encourages responsible credit usage.
 
 ---
 
