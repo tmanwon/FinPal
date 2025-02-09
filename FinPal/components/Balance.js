@@ -10,9 +10,6 @@ import {
 import { LineChart } from 'react-native-chart-kit';
 
 export default function Balance(props) {
-  const [balance, setBalance] = useState();
-  const [, regenerateRadomData] = useState();
-  const forceUpdate = useCallback(() => regenerateRadomData({}), []);
 
   const data = [
     0,
@@ -28,7 +25,7 @@ export default function Balance(props) {
   ];
 
   return (
-    <Pressable style={styles.container} onPress={forceUpdate}>
+    <Pressable style={styles.container}>
       <View style={styles.layout}>
         <View>
           <Text style={styles.title}>Card balance</Text>

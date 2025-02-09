@@ -9,6 +9,15 @@ import {useState, useEffect} from "react";
 import * as Device from 'expo-device';
 import * as Notifications from 'expo-notifications';
 import Constants from "expo-constants";
+import {SchedulableTriggerInputTypes} from "expo-notifications";
+
+Notifications.setNotificationHandler({
+    handleNotification: async () => ({
+        shouldShowAlert: true,
+        shouldPlaySound: false,
+        shouldSetBadge: false,
+    }),
+});
 
 export default function Home() {
 
@@ -21,6 +30,7 @@ export default function Home() {
             icon: '#34D058',
         };
         setData([newTransaction, ...data]);
+        schedulePushNotification(data[0]);
     }
 
     const [data, setData] = useState([
@@ -68,7 +78,6 @@ export default function Home() {
         },
     ]);
 
-
     return (
         <View style={styles.container}>
             <View style={styles.staticSection}>
@@ -81,6 +90,20 @@ export default function Home() {
         </View>
     );
 
+}
+
+async function schedulePushNotification(transaction) {
+    await Notifications.scheduleNotificationAsync({
+        content: {
+            title: "You've got mail! 📬",
+            body: 'Here is the notification body',
+            data: { data: 'goes here', test: { test1: 'more data' } },
+        },
+        trigger: {
+            type: SchedulableTriggerInputTypes.TIME_INTERVAL,
+            seconds: 2,
+        },
+    });
 }
 
 const styles = StyleSheet.create({
