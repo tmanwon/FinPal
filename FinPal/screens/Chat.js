@@ -2,6 +2,7 @@ import { fetchOpenAIResponse } from "@/app/openai";
 import React, { useState, useRef } from "react";
 import { View, TextInput, Text, ActivityIndicator, TouchableOpacity, KeyboardAvoidingView, Platform, Animated } from "react-native";
 import { StyleSheet } from 'react-native';
+import {submit} from "react-native-plaid-link-sdk";
 
 export default function Chat() {
 
