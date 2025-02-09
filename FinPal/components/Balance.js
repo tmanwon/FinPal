@@ -7,7 +7,7 @@ import {
   Dimensions,
   Platform,
 } from 'react-native';
-import { LineChart } from 'react-native-chart-kit';
+import { ProgressChart } from 'react-native-chart-kit';
 
 export default function Balance(props) {
 
@@ -27,24 +27,26 @@ export default function Balance(props) {
   return (
     <Pressable style={styles.container}>
       <View style={styles.layout}>
-        <View>
+        <View style={styles.vertical}>
           <Text style={styles.title}>Card balance</Text>
           <Text style={styles.balance}>
             ${props.data.reduce((acc, transaction) => {
             return acc + parseFloat(transaction.amount);
           }, 0).toFixed(2)}
           </Text>
+          <Text style={styles.title}>Remaining budget</Text>
+          <Text style={styles.balance}>${props.budget - props.data.reduce((acc, transaction) => {
+            return acc + parseFloat(transaction.amount);
+          }, 0).toFixed(2)}</Text>
         </View>
-        <LineChart
+        <ProgressChart
           data={{
-            datasets: [
-              {
-                data,
-              },
-            ],
+            data: [(props.data.reduce((acc, transaction) => {
+              return acc + parseFloat(transaction.amount);
+            }, 0).toFixed(2))/props.budget],
           }}
           width={Dimensions.get('window').width / 2 - 24}
-          height={80}
+          height={100}
           chartConfig={{
             backgroundGradientFrom: '#fff',
             backgroundGradientTo: '#fff',
@@ -55,9 +57,8 @@ export default function Balance(props) {
               stroke: 'transparent',
             },
           }}
-          hidePointsAtIndex={[...Array(data.length - 1).keys()]}
-          withHorizontalLabels={false}
-          bezier
+          radius={40}
+          hideLegend={false}
         />
       </View>
     </Pressable>
@@ -68,8 +69,8 @@ const styles = StyleSheet.create({
   container: {
     paddingVertical: 12,
     paddingHorizontal: 16,
-    height: 100,
-    borderRadius: 6,
+    height: 150,
+    borderRadius: 20,
     backgroundColor: '#fff',
     borderWidth: 1,
     borderStyle: 'solid',
@@ -85,6 +86,11 @@ const styles = StyleSheet.create({
     marginBottom: Platform.select({
       native: 12,
     }),
+  },
+  vertical: {
+    flexDirection: 'column',
+    justifyContent: 'center',
+    alignItems: 'flex-start',
   },
   layout: {
     flex: 1,

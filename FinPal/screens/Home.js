@@ -1,6 +1,5 @@
 import { View, StyleSheet } from 'react-native';
 import Card from '../components/Card';
-import Budget from "@/components/Budget";
 import Balance from '../components/Balance';
 import Transactions from '../components/Transactions';
 import TestButton from "@/components/TestButton";
@@ -89,8 +88,7 @@ export default function Home() {
         <View style={styles.container}>
             <View style={styles.staticSection}>
                 {/*<Card />*/}
-                <Budget />
-                <Balance data={data}/>
+                <Balance data={data} budget={budget}/>
                 <TestButton title="Post Test Transaction" onPress={addTransaction} />
             </View>
             <Transactions data={data} />

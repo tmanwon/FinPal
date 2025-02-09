@@ -4,11 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5779287f-e5d4-43b1-93d8-32b24fcc4ed6" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/FinPal/assets/creditcard.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FinPal/assets/headset.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FinPal/app/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/FinPal/app/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FinPal/components/Budget.js" beforeDir="false" />
+    <list default="true" id="5779287f-e5d4-43b1-93d8-32b24fcc4ed6" name="Changes" comment="Tabs and UI Improvements">
+      <change beforePath="$PROJECT_DIR$/.idea/material_theme_project_new.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/material_theme_project_new.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FinPal/assets/headset.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FinPal/components/Balance.js" beforeDir="false" afterPath="$PROJECT_DIR$/FinPal/components/Balance.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FinPal/navigators/Tabs.js" beforeDir="false" afterPath="$PROJECT_DIR$/FinPal/navigators/Tabs.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FinPal/screens/Home.js" beforeDir="false" afterPath="$PROJECT_DIR$/FinPal/screens/Home.js" afterDir="false" />
     </list>
     <list id="9ae7edc2-08ee-4786-ae11-c42f0a92ed43" name="Changes by mattmocklin" comment="" />
     <option name="SHOW_DIALOG" value="false" />
@@ -77,6 +78,15 @@
       <updated>1739036360985</updated>
       <workItem from="1739036361984" duration="24496000" />
     </task>
+    <task id="LOCAL-00001" summary="Tabs and UI Improvements">
+      <option name="closed" value="true" />
+      <created>1739067011567</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1739067011567</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -131,6 +141,8 @@
     <ignored-roots>
       <path value="$PROJECT_DIR$/FinPal" />
     </ignored-roots>
+    <MESSAGE value="Tabs and UI Improvements" />
+    <option name="LAST_COMMIT_MESSAGE" value="Tabs and UI Improvements" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
