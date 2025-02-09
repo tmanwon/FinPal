@@ -38,11 +38,11 @@ By ensuring users always know how much they have left in their budget, **FinPal*
 ## 🚧 Challenges & Solutions
 ### 🔴 Challenge 1: Integrating Plaid
 **Problem:** Plaid required a dedicated Node backend for data retrieval and Express as middle-ware between the front-end and back-end.
-**Solution:** We opted to use sandbox data provided by Plaid as a proof of concept, which provides direct transaction retrieval. We ended up giving up on Express for time reasons.
+**Solution:** We opted to use sandbox data provided by Plaid as a proof of concept, which provides direct transaction retrieval.
 
 ### 🔴 Challenge 2: OpenAI API Token
 **Problem:** It was taking much longer than we're proud to admit to get a response from the API. We kept getting 404 Responses from our queries.
-**Solution:** Turns out we didn't have the tier plan for ChatGPT 4o. So we used ChatGPT 4o-mini instead.
+**Solution:** Turns out we didn't have the tier plan for ChatGPT 4o. So we used ChatGPT 3.5-turbo instead.
 
 ---
 
