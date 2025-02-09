@@ -1,3 +1,4 @@
+/*
 import React from 'react';
 import Constants from 'expo-constants';
 import Tabs from "@/navigators/Tabs";
@@ -12,5 +13,7 @@ export default function App() {
       </NavigationIndependentTree>
   );
 }
+
+ */
 
 

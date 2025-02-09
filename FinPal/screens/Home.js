@@ -21,16 +21,23 @@ Notifications.setNotificationHandler({
 
 export default function Home() {
 
+    const [budget, setBudget] = useState(1000);
+
     const addTransaction = () => {
         const newTransaction = {
             title: 'Test Transaction',
             location: 'Test Location',
-            date: 'Test Date',
+            // format current date for ex. "Today, 13:21"
+            date: new Date().toLocaleString('en-US', {
+                weekday: 'long',
+                hour: 'numeric',
+                minute: 'numeric',
+            }),
             amount: (Math.random() * 100).toFixed(2),
             icon: '#34D058',
         };
         setData([newTransaction, ...data]);
-        schedulePushNotification(data[0]).then(r => console.log(r));
+        schedulePushNotification(data[0], budget, data).then(r => console.log(r));
     }
 
     const [data, setData] = useState([
@@ -84,18 +91,20 @@ export default function Home() {
                 {/*<Card />*/}
                 <Budget />
                 <Balance data={data}/>
+                <TestButton title="Post Test Transaction" onPress={addTransaction} />
             </View>
-            <TestButton title="Create Test Transaction" onPress={addTransaction} />
             <Transactions data={data} />
         </View>
     );
 }
 
-async function schedulePushNotification(transaction) {
+async function schedulePushNotification(transaction, budget, data) {
     await Notifications.scheduleNotificationAsync({
         content: {
             title: `$${transaction.amount} - ${transaction.title}`,
-            body: 'Here is the notification body',
+            body: `${budget - data.reduce((acc, transaction) => {
+                return acc + parseFloat(transaction.amount);
+            }, 0).toFixed(2)} remains in your budget this month`,
         },
         trigger: null,
     });
