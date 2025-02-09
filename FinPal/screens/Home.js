@@ -30,7 +30,7 @@ export default function Home() {
             icon: '#34D058',
         };
         setData([newTransaction, ...data]);
-        schedulePushNotification(data[0]);
+        schedulePushNotification(data[0]).then(r => console.log(r));
     }
 
     const [data, setData] = useState([
@@ -89,20 +89,15 @@ export default function Home() {
             <Transactions data={data} />
         </View>
     );
-
 }
 
 async function schedulePushNotification(transaction) {
     await Notifications.scheduleNotificationAsync({
         content: {
-            title: "You've got mail! 📬",
+            title: `$${transaction.amount} - ${transaction.title}`,
             body: 'Here is the notification body',
-            data: { data: 'goes here', test: { test1: 'more data' } },
         },
-        trigger: {
-            type: SchedulableTriggerInputTypes.TIME_INTERVAL,
-            seconds: 2,
-        },
+        trigger: null,
     });
 }
 

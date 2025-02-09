@@ -7,8 +7,8 @@ const Tab = createBottomTabNavigator();
 const Tabs = () => {
   return (
     <Tab.Navigator>
-      <Tab.Screen name={"Home"} component={Home}/>
-        <Tab.Screen name={"AI"} component={Chat}/>
+      <Tab.Screen name={"Home"} component={Home} options={{ headerShown: false }}/>
+        <Tab.Screen name={"AI"} component={Chat} options={{ headerShown: false }}/>
     </Tab.Navigator>
   );
 }
