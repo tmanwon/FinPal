@@ -1,7 +1,6 @@
 import  Constants from "expo-constants";
 
 const OPENAI_API_KEY = Constants.expoConfig?.extra?.OPENAI_API_KEY;
-console.log("OPENAI_API_KEY: ", OPENAI_API_KEY);
 
 export const fetchOpenAIResponse = async (prompt: string) => {
   try {
